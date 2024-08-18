@@ -42,21 +42,24 @@ nav li:nth-child(1):hover~span{
 	left: 235px;
 
 }
-
+/* Colombia*/
 nav li:nth-child(2):hover~span{
-	left: 335px;
-	width: 170px;
+	background: linear-gradient( yellow, blue, red);	
+	left: 340px;
+	width: 160px;
 
 }
-
+/* Mexico */
 nav li:nth-child(3):hover~span{
-	left: 535px;
+	background: linear-gradient(90deg, green, white, red);	
+	left: 525px;
 	width: 125px;
 
 }
-
+/* España */
 nav li:nth-child(4):hover~span{
-	left: 695px;
+	background: linear-gradient( red, yellow, red);	
+	left: 685px;
 	width: 125px;
 
 }
