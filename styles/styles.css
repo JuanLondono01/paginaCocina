@@ -1,227 +1,170 @@
+/* General Styles */
 body {
-	margin: 0 auto;
-	max-width: 900px;
-	font-family: cursive;
-	font-weight: 300;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
 nav {
-	position: relative;
-	background-color: rgb(235, 180, 78, 0.883);
-	width: 100%;
-	height: 160px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+	position: sticky;
+	top: 0;
+    background-color: #333;
 }
 
-nav ul > li{
-	position: relative;
-	display: inline-block;
-	font-size: 1em;
-	z-index: 1;
+.nav-menu {
+    cursor: pointer;
+    display: none;
 }
 
-nav  a{
-	color: #000;
-	text-decoration: none;
-	padding: 0 23px;
-}
-
-nav span{
-	position: absolute;
-	top: 96px;
-	left: 235px;
-	width: 95px;
-	height: 40%;
-	background: linear-gradient(180deg, #ffff, #0000);	
-	border-radius: 10px 10px 0 0;
-	transition: .5s ease;
-}
-
-nav li:nth-child(1):hover~span{
-	left: 235px;
-
-}
-/* Colombia*/
-nav li:nth-child(2):hover~span{
-	background: linear-gradient( yellow, blue, red);	
-	left: 340px;
-	width: 160px;
-
-}
-/* Mexico */
-nav li:nth-child(3):hover~span{
-	background: linear-gradient(90deg, green, white, red);	
-	left: 525px;
-	width: 125px;
-
-}
-/* España */
-nav li:nth-child(4):hover~span{
-	background: linear-gradient( red, yellow, red);	
-	left: 685px;
-	width: 125px;
-
-}
-html, body {
-	scroll-behavior: smooth;
-}
-
-
-
-
-nav ul li:last-of-type {
-	margin-right: 1rem;
-}
-
-
-a:active {
-	color: #e26f03;
-}
-.img-logo {
-	padding-top: 30px;
-	padding-left: 5%;
-	width: 100px;
-}
 nav ul {
-	float: right;
-	padding-top: 90px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
+
+nav ul li {
+    margin: 0 15px;
+	transition: .5s ease;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav ul li:hover{
+	padding: 10px;
+	background-color: rgb(255, 255, 255, 0.15);
+	border-radius: 5px;
+}
+
+/* Banner */
 .banner {
-	width: 100%;
+    width: 100%;
+    height: auto;
 }
+
+/* Featured Section */
 .featured {
-	background-color: rgba(240, 193, 107, 0.616);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
+
+.ft-articulo {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px;
+}
+
 .fp-video {
-	padding: 2em;
-	width: 55%;
-	overflow-y: visible;
-}
-.ft-articulo {
-	padding: 2em;
-	width: 30%;
-	vertical-align: top;
-	text-align: center;
-}
-article {
-	margin: 20px 0;
-	background-color: rgba(240, 220, 107, 0.582);
-	padding: 30px;
-}
-article h1 {
-	border-bottom: solid thin black;
-}
-.fp-video,
-.ft-articulo {
-	display: inline-block;
+    max-width: 100%;
+    height: 400px;
 }
 
-.video{
-	box-shadow: 0 10px 10px black;
-}
-
-.video::before{
-	content: "Aprende a hacer deliciosas pechugas de pollo";
-	color: black;
-	margin-top: 10rem;
-}
 .boton-container {
-	transition: .3s all;
-	margin: 0 auto;
-	border-radius: 10px;
-	background-color: #e26f03;
-	text-align: center;
+    margin-top: 20px;
 }
-.boton-container a {
-	text-decoration: none;
-	color: #fff;
-}
+
 .boton {
-	padding: 15px;
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
-.boton-container:hover {
-	background-color: #1fbea4;
+
+.boton:hover {
+    background-color: #e03e00;
+}
+
+/* Articles Section */
+section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .art-image {
-	display: flex;
-	justify-content: space-evenly;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
 }
 
-.art-image img {
-	margin: 0;
-	max-width: 100%;
+.art-con {
+    flex: 2;
+    padding: 20px;
 }
-.art-cont {
-	display: flex;
-	flex-direction: column;
-	width: 740px;
-	vertical-align: top;
-	text-align: center	;
-}
-h2 {
-	margin: 0;
-	border-bottom: solid thin black;
-}
+
+/* Footer */
 footer {
-	display: grid;
-	grid-template-areas: 
-    "redes contacto contacto";
-	width: 100%;
-	height: 250px;
-	gap: 10px;
-    background-color: rgba(240, 220, 107, 0.582);
-    padding-bottom: 1rem;
-}
-.form {
-	display: flex;
-	flex-direction: column;
-	grid-area: contacto;
-	justify-content: center;
-	width: 110%;
-	text-align: center;
-	gap: 10px;
-	padding-left: 1rem;
-    transform: translateX(-55px);
-}
-.form input {	
-	outline: none;
-	border: 1px solid black;
-	border-radius: 10px;
-	height: 2rem;
-	text-indent: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.form input:focus,
-.form textarea:focus{
-	border: 2px solid green;
-}
-.form > textarea {
-	outline: none;
-	border: 1px solid black;
-	border-radius: 10px;
-	overflow-y: hidden;
-	resize: none;
-	text-indent: 10px;
-}
 .redes {
-	display: flex;
-	grid-area: redes;
-	width: 90%;
-    justify-content: space-evenly;
-    align-items: center;
-	border-right: 1px solid rgb(0, 0, 0, 0.35);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
-
-
 
 .redes a {
-	text-decoration: none;
-	display: flex;
-	color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
-footer address{
-    transform: translateX(12rem);
+.copy {
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .featured {
+        flex-direction: column;
+    }
+
+    article {
+        flex-direction: column;
+    }
 }
