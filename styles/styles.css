@@ -250,7 +250,7 @@ footer {
     }
 
     .art-image{
-        transform: translateX(-50px);
-        width: min-content;
+        transform: translateX(-135px);
+        width: 100px;
     }
 }
