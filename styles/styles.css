@@ -244,13 +244,28 @@ footer {
     article {
         flex-direction: column;
     }
-    .art-con{
-        margin-right: 10rem;
-        width: fit-content;
+
+}
+
+
+@media (320px <= width <= 425px) {
+    .mexicana{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
-    .art-image{
-        transform: translateX(-135px);
-        width: 100px;
+    .mexicana figure img{
+        width: 250px;
+        height: 150px;
+    }
+
+    .mexicana div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
