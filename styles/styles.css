@@ -24,6 +24,7 @@ nav {
 	position: sticky;
 	top: 0;
     background-color: #333;
+    z-index: 1;
 }
 
 .nav-menu {
@@ -103,7 +104,7 @@ nav ul li:nth-child(4):hover{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: autoscroll 15s infinite;
+    animation: autoscroll 10s infinite;
 }
 
 @keyframes autoscroll {
@@ -267,5 +268,28 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    nav ul li:nth-child(2):hover{
+        background-image: linear-gradient(to bottom, yellow, yellow, blue, red) ;
+        background-position: 90px 91px;
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    nav ul li:nth-child(3):hover{
+        background-image: linear-gradient(to right, green, white, red);
+        background-position:100px 0px;
+
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    nav ul li:nth-child(4):hover{
+        background-image: linear-gradient(to bottom, red, yellow, red);
+        background-position: 90px 90px;
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
