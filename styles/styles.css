@@ -244,4 +244,13 @@ footer {
     article {
         flex-direction: column;
     }
+    .art-con{
+        margin-right: 10rem;
+        width: fit-content;
+    }
+
+    .art-image{
+        transform: translateX(-50px);
+        width: min-content;
+    }
 }
