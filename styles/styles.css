@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header {
     text-align: center;
     background-color: #333;
@@ -46,18 +50,94 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-nav ul li:hover{
-	padding: 10px;
-	background-color: rgb(255, 255, 255, 0.15);
-	border-radius: 5px;
+
+nav ul li:nth-child(2):hover{
+    background-image: url(../img/colombia.png) ;
+    background-position: 90px 90px;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav ul li:nth-child(3):hover{
+    background-image: url(../img/mexico.png);
+    background-position:128px 0px;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+nav ul li:nth-child(4):hover{
+    background-image: url(../img/españa.png);
+    background-position: 90px 90px;
+
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* Banner */
 .banner {
     width: 100%;
     height: auto;
 }
 
+.banner-text{
+    position: absolute;
+    color: #918989;
+    filter: drop-shadow(1px 1px 1px black);
+    top: 15rem;
+    left: 23rem;
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.benefits{
+    position: relative;
+    z-index: 1;
+    height: 1em;
+    overflow: hidden;
+    display: flex;
+    font-size: calc(1em, + 10px);
+    flex-direction: column;
+}
+
+.benefits span{
+    background: -webkit-linear-gradient(#fc74fe, #e25458);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: autoscroll 15s infinite;
+}
+
+@keyframes autoscroll {
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-1.2em);
+    }
+    30%{
+        transform: translateY(-1.2em);
+    }
+    35%{
+        transform: translateY(-2.5em);
+    }
+    55%{
+        transform: translateY(-2.5em);
+    }
+    60%{
+        transform: translateY(-3.5em);
+    }
+    80%{
+        transform: translateY(-3.5em);
+    }
+    85%{
+        transform: translateY(-3.5em);
+    }
+    100%{
+        transform: translateY(-3.5em);
+    }
+}
 /* Featured Section */
 .featured {
     display: flex;
