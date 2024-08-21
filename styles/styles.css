@@ -236,6 +236,7 @@ footer {
 
     nav ul {
         flex-direction: column;
+        gap: 8px;
         display: none;
     }
 
