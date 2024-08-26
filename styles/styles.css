@@ -1,0 +1,304 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+	position: sticky;
+	top: 0;
+    background-color: #333;
+    z-index: 1;
+}
+
+
+.img-logo{
+    height: 100px;
+    width: 100px;
+}
+.nav-menu {
+    cursor: pointer;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+	transition: .5s ease;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+
+nav ul li:nth-child(2):hover{
+    background-image: url(../img/colombia.png) ;
+    background-position: 90px 90px;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav ul li:nth-child(3):hover{
+    background-image: url(../img/mexico.png);
+    background-position:128px 0px;
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul li:nth-child(4):hover{
+    background-image: url(../img/españa.png);
+    background-position: 90px 90px;
+
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Banner */
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text{
+    color: #918989;
+    filter: drop-shadow(1px 1px 1px black);
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.benefits{
+    position: relative;
+    z-index: 1;
+    height: 1em;
+    overflow: hidden;
+    display: flex;
+    font-size: calc(1em, + 10px);
+    flex-direction: column;
+}
+
+.benefits span{
+    background: -webkit-linear-gradient(#fc74fe, #e25458);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: autoscroll 8s infinite;
+}
+
+@keyframes autoscroll {
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-1.2em);
+    }
+    30%{
+        transform: translateY(-1.2em);
+    }
+    35%{
+        transform: translateY(-2.5em);
+    }
+    55%{
+        transform: translateY(-2.5em);
+    }
+    60%{
+        transform: translateY(-3.5em);
+    }
+    80%{
+        transform: translateY(-3.5em);
+    }
+    85%{
+        transform: translateY(-3.5em);
+    }
+    100%{
+        transform: translateY(-3.5em);
+    }
+}
+/* Featured Section */
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.ft-articulo {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px;
+}
+
+.fp-video {
+    max-width: 100%;
+    height: 400px;
+}
+
+.boton-container {
+    margin-top: 20px;
+}
+
+.boton {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #e03e00;
+}
+
+/* Articles Section */
+section {
+    padding: 20px;
+    background-color: #fff;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.art-image {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.art-con {
+    flex: 2;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.copy {
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .featured {
+        flex-direction: column;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (320px <= width <= 425px) {
+    .mexicana{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mexicana figure img{
+        width: 250px;
+        height: 150px;
+    }
+
+    .mexicana div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li:nth-child(2):hover{
+        background-image: linear-gradient(to bottom, yellow, yellow, blue, red) ;
+        background-position: 90px 91px;
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    nav ul li:nth-child(3):hover{
+        background-image: linear-gradient(to right, green, white, red);
+        background-position:100px 0px;
+
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    nav ul li:nth-child(4):hover{
+        background-image: linear-gradient(to bottom, red, yellow, red);
+        background-position: 90px 90px;
+        background-size: cover;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
