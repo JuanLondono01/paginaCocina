@@ -277,7 +277,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .nav-menu {
         display: block;
@@ -293,34 +292,78 @@ footer {
         display: flex;
     }
 
+    .img-logo {
+        height: 80px;
+        width: 80px;
+    }
+
+    .banner {
+        height: auto; /* Ajuste para pantallas más pequeñas */
+    }
+
+    .banner-text {
+        font-size: 2rem; /* Ajuste para pantallas más pequeñas */
+    }
+
     .featured {
         flex-direction: column;
-        
+    }
+
+    .featured p {
+        width: 90%; /* Ajuste para pantallas más pequeñas */
+    }
+
+    .receta {
+        max-width: 100%;
+        margin: 10px 0; /* Ajuste para pantallas más pequeñas */
+    }
+    .col-featured, .mex-featured, .spa-featured{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .col-featured p, .mex-featured p, .spa-featured p{
+        width: 300px;
     }
 }
 
-@media (320px <= width <= 425px) {
-    nav ul li:nth-child(2):hover {
-        background-image: linear-gradient(to bottom, yellow, yellow, blue, red);
-        background-position: 90px 91px;
-        background-size: cover;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+@media (max-width: 425px) {
+    .img-logo {
+        height: 60px;
+        width: 60px;
     }
 
-    nav ul li:nth-child(3):hover {
-        background-image: linear-gradient(to right, green, white, red);
-        background-position: 100px 0px;
-        background-size: cover;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+    nav ul li {
+        margin: 0 5px; /* Ajuste para pantallas más pequeñas */
     }
 
-    nav ul li:nth-child(4):hover {
-        background-image: linear-gradient(to bottom, red, yellow, red);
-        background-position: 90px 90px;
-        background-size: cover;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+    nav ul li a {
+        font-size: 1em; /* Ajuste para pantallas más pequeñas */
+    }
+
+    .banner-text {
+        font-size: 1.5rem; /* Ajuste para pantallas más pequeñas */
+    }
+
+    .receta {
+        max-width: 100%;
+        margin: 10px 0; /* Ajuste para pantallas más pequeñas */
+    }
+
+    .receta h2 {
+        font-size: 1.2rem; /* Ajuste para pantallas más pequeñas */
+    }
+
+    .receta p {
+        font-size: 0.9rem; /* Ajuste para pantallas más pequeñas */
+        width: 100%; /* Ajuste para pantallas más pequeñas */
+    }
+    .col-featured, .mex-featured, .spa-featured{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .col-featured p, .mex-featured p, .spa-featured p{
+        width: 300px;
     }
 }
